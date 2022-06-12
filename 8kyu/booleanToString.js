@@ -4,3 +4,6 @@
 function booleanToString(b){
     return String(b)
   }
+
+// refactored solution:
+const booleanToString = b => String(b);
