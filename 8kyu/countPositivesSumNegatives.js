@@ -3,7 +3,7 @@ function countPositivesSumNegatives(input) {
   let positive = 0;
   let negative = 0;
 
-  if (input === []) {
+  if (input === null || input.length === 0) {
     return [];
   } else {
     input.forEach(num => {
@@ -11,12 +11,10 @@ function countPositivesSumNegatives(input) {
         positive++;
       } else if (num < 0) {
         negative += num;
-      } else {
-        return [];
       }
     });
-    newArr.push(positive, negative);
   }
+  newArr.push(positive, negative);
   return newArr;
 }
 
