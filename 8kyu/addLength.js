@@ -12,3 +12,8 @@ function addLength(str) {
 
   return arr.map(word => word + ' ' + word.length);
 }
+
+// Refactored solution:
+function addLength(str) {
+  return str.split(' ').map(word => word + ' ' + word.length);
+}
