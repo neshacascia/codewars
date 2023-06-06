@@ -7,3 +7,8 @@ function isDivisible(...nums) {
 
   return nums.every(num => n % num === 0);
 }
+
+// Refactored solution:
+function isDivisible(firstNum, ...arr) {
+  return arr.every(num => firstNum % num === 0);
+}
