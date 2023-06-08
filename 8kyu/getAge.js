@@ -7,3 +7,8 @@
 function getAge(inputString) {
   return Number(inputString[0]);
 }
+
+// Refactored solution:
+function getAge(inputString) {
+  return parseInt(inputString);
+}
