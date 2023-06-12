@@ -16,3 +16,13 @@ function sumArray(array) {
     return 0;
   }
 }
+
+// Refactored solution:
+function sumArray(array) {
+  return array
+    ? array
+        .sort((a, b) => a - b)
+        .slice(1, -1)
+        .reduce((accum, curr) => accum + curr, 0)
+    : 0;
+}
