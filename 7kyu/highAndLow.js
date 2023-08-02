@@ -6,3 +6,10 @@ function highAndLow(numbers) {
 
   return `${arr[arr.length - 1]} ${arr[0]}`;
 }
+
+// Refactored solution:
+function highAndLow(numbers) {
+  const arr = numbers.split(' ');
+
+  return `${Math.max(...arr)} ${Math.min(...arr)}`;
+}
