@@ -18,3 +18,12 @@ function count(string) {
 
   return obj;
 }
+
+// Refactored solution:
+function count(string) {
+  let obj = {};
+
+  string.split('').forEach(elem => (obj[elem] ? obj[elem]++ : (obj[elem] = 1)));
+
+  return obj;
+}
