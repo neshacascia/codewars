@@ -16,3 +16,8 @@ const quarterOf = month => {
     return 4;
   }
 };
+
+// Refactored solution:
+function quarterOf(month) {
+  return Math.ceil(month / 3);
+}
