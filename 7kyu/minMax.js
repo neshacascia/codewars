@@ -10,3 +10,8 @@ function minMax(arr) {
   arr.sort((a, b) => a - b);
   return [arr[0], arr[arr.length - 1]];
 }
+
+// Refactored solution:
+function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
