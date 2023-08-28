@@ -6,3 +6,8 @@ function findShort(s) {
   let arr = s.split(' ').sort((a, b) => a.length - b.length);
   return arr[0].length;
 }
+
+// Refactored solution
+function findShort(s) {
+  return s.split(' ').sort((a, b) => a.length - b.length)[0].length;
+}
