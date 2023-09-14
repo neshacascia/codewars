@@ -10,3 +10,11 @@ function doubleChar(str) {
 
   return newStr;
 }
+
+// Refactored solution
+function doubleChar(str) {
+  return str
+    .split('')
+    .map(str => str.repeat(2))
+    .join('');
+}
