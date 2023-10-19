@@ -13,3 +13,6 @@ function solve(arr) {
     .map(elem => new Set(elem).size)
     .reduce((acc, curr) => acc * curr, 1);
 }
+
+// Refactored solution:
+const solve = arr => arr.reduce((a, c) => a * new Set(c).size, 1);
