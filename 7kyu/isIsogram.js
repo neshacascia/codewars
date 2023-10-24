@@ -12,3 +12,8 @@ function isIsogram(str) {
     .split('')
     .every((elem, ind, arr) => arr.indexOf(elem) === arr.lastIndexOf(elem));
 }
+
+// Refactored solution:
+function isIsogram(str) {
+  return new Set(str.toUpperCase()).size == str.length;
+}
