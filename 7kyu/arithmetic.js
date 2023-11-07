@@ -7,14 +7,26 @@
 
 // The four operators are "add", "subtract", "divide", "multiply".
 
+// function arithmetic(a, b, operator) {
+//   if (operator === 'add') {
+//     return a + b;
+//   } else if (operator === 'subtract') {
+//     return a - b;
+//   } else if (operator === 'multiply') {
+//     return a * b;
+//   } else {
+//     return a / b;
+//   }
+// }
+
+// Refactored solution
 function arithmetic(a, b, operator) {
-  if (operator === 'add') {
-    return a + b;
-  } else if (operator === 'subtract') {
-    return a - b;
-  } else if (operator === 'multiply') {
-    return a * b;
-  } else {
-    return a / b;
-  }
+  const operation = {
+    add: (a, b) => a + b,
+    subtract: (a, b) => a - b,
+    multiply: (a, b) => a * b,
+    divide: (a, b) => a / b,
+  };
+
+  return operation[operator](a, b);
 }
