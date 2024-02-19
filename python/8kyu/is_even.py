@@ -14,3 +14,7 @@ def is_even(n):
 # Refactored solution
 def is_even(n): 
     return True if n % 2 == 0 else False
+
+# Refactored solution #2
+def is_even(n): 
+    return  n % 2 == 0 
